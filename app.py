@@ -1,4 +1,4 @@
-from flask import *
+from  flask import Flask, jsonify
 import json, random, string
 from lib2to3.pygram import Symbols
 
@@ -42,35 +42,65 @@ def home():
 
 @app.route('/alphabets', methods=['GET'])
 def alphabets():
+    alphabets_list = []
     temp = random.sample(ALPHABETS,length)
     password = "".join(temp)
-    data_set = {'CAPTCHA': password}
-    json_dump = json.dumps(data_set)
-    return json_dump
+    Alpha = {
+    'Cache': password,
+    }
+    alphabets_list.append(Alpha)
+    New_List = json.dumps(alphabets_list, indent =2)
+    with open("baby.json", "w", encoding="utf-8") as file:
+      file.write(str(New_List)) 
+    return jsonify(alphabets_list)
 
 @app.route('/symbols', methods=['GET'])
 def symbol():
+    symbols_list = []
     temp = random.sample(SYMBOLS,length)
     password = "".join(temp)
-    data_set = {'CAPTCHA': password}
-    json_dump = json.dumps(data_set) 
-    return json_dump
+    Symba = {
+    'Cache': password,
+    }
+    symbols_list.append(Symba)
+    New_List = json.dumps(symbols_list, indent =2)
+    with open("baby.json", "w", encoding="utf-8") as file:
+      file.write(str(New_List)) 
+    return jsonify(symbols_list)
 
 @app.route('/numbers', methods=['GET'])
 def numbers():
+    numbers_list = []
     temp = random.sample(NUMBER,length)
     password = "".join(temp)
-    data_set = {'CAPTCHA': password}
-    json_dump = json.dumps(data_set) 
-    return json_dump   
+    temp = random.sample(NUMBER,length)
+    password = "".join(temp)
+    Numba = {
+    'Cache': password,
+    }
+    numbers_list.append(Numba)
+    New_List = json.dumps(numbers_list, indent =2)
+    with open("baby.json", "w", encoding="utf-8") as file:
+      file.write(str(New_List)) 
+    return jsonify(numbers_list)
+  
 
 @app.route('/all', methods=['GET'])
 def all():
+    all_list = []
     temp = random.sample(ALL,length)
     password = "".join(temp)
-    data_set = {'CAPTCHA': password}
-    json_dump = json.dumps(data_set)  
-    return json_dump    
+    temp = random.sample(ALL,length)
+    password = "".join(temp)
+    All = {
+    'Cache': password,
+    }
+    all_list.append(All)
+    New_List = json.dumps(all_list, indent =2)
+    with open("baby.json", "w", encoding="utf-8") as file:
+      file.write(str(New_List)) 
+    return jsonify(all_list)
+   
 
 if __name__ == '__main__':
     app.run(debug = True, host = '0.0.0.0', port= PORT)
