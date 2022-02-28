@@ -7,11 +7,11 @@
 
 ## These Are The Endpoints Of The API
 
-+ ### [`https://random-captcha-api.herokuapp.com/`](https://random-captcha-api.herokuapp.com/) to get the documentation.
-+ ### [`https://random-captcha-api.herokuapp.com/all`](https://random-captcha-api.herokuapp.com/all)will return Captcha mixed with ALPHABETS,SYMBOLS,NUMBERS
-+ ### [`https://random-captcha-api.herokuapp.com/alphabets`](https://random-captcha-api.herokuapp.com/alphabets)will return Captcha filled with ALPHABETS
-+ ### [`https://random-captcha-api.herokuapp.com/numbers`](https://random-captcha-api.herokuapp.com/numbers)will return Captcha filled with NUMBERS
-+ ### [`https://random-captcha-api.herokuapp.com/symbols`](https://random-captcha-api.herokuapp.com/symbols)will return Captcha filled with SYMBOLS
++ ### [`https://random-simple-captcha-api.herokuapp.com/`](https://random-simple-captcha-api.herokuapp.com/) to get the documentation.
++ ### [`https://random-simple-captcha-api.herokuapp.com/all`](https://random-simple-captcha-api.herokuapp.com/all)will return Captcha mixed with ALPHABETS,SYMBOLS,NUMBERS
++ ### [`https://random-simple-captcha-api.herokuapp.com/alphabets`](https://random-simple-captcha-api.herokuapp.com/alphabets)will return Captcha filled with ALPHABETS
++ ### [`https://random-simple-captcha-api.herokuapp.com/numbers`](https://random-simple-captcha-api.herokuapp.com/numbers)will return Captcha filled with NUMBERS
++ ### [`https://random-simple-captcha-api.herokuapp.com/symbols`](https://random-simple-captcha-api.herokuapp.com/symbols)will return Captcha filled with SYMBOLS
 
 This project is hosted by [Heroku](https://www.heroku.com/) with with jlcpcbofficial02@gmail.com
 
@@ -25,24 +25,24 @@ This project is hosted by [Heroku](https://www.heroku.com/) with with jlcpcboffi
 
 ## Example:
 
-+ ### [`https://random-captcha-api.herokuapp.com/all`](https://random-captcha-api.herokuapp.com/all) returns: ↓
++ ### [`https://random-simple-captcha-api.herokuapp.com/all`](https://random-simple-captcha-api.herokuapp.com/all) returns: ↓
 ```JSON
 {"CAPTCHA": "(IQZ)5~:_`"}
 ```
 
-+ ### [`https://random-captcha-api.herokuapp.com/alphabets`](https://random-captcha-api.herokuapp.com/alphabets) returns: ↓
++ ### [`https://random-simple-captcha-api.herokuapp.com/alphabets`](https://random-simple-captcha-api.herokuapp.com/alphabets) returns: ↓
 ```JSON
 {"CAPTCHA": "KCVLQTGMFI"}
 
 ```
 
-+ ### [`https://random-captcha-api.herokuapp.com/numbers`](https://random-captcha-api.herokuapp.com/numbers) returns: ↓
++ ### [`https://random-simple-captcha-api.herokuapp.com/numbers`](https://random-captcha-api.herokuapp.com/numbers) returns: ↓
 ```JSON
 {"CAPTCHA": "2681057934"}
 
 ```
 
-+ ### [`https://random-captcha-api.herokuapp.com/symbols`](https://random-captcha-api.herokuapp.com/symbols) returns: ↓
++ ### [`https://random-simple-captcha-api.herokuapp.com/symbols`](https://random-simple-captcha-api.herokuapp.com/symbols) returns: ↓
 ```JSON
 {"CAPTCHA": "\\~|,'^.{]<"}
 
